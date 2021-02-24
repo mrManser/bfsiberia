@@ -1,0 +1,162 @@
+body {
+  padding-top: 56px;
+}
+
+/*Grid*/
+.content_wrapper {
+	padding: 0 .9375rem 2.5rem;
+}
+.content_block {
+	margin-bottom: 1.875rem;
+}
+
+/*Navbar*/
+.navbar {
+	background-color: #1fbcee;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 1rem 0 rgba(0,0,0,.15);
+  box-shadow: 0 0 1rem 0 rgba(0,0,0,.15);
+}
+
+.navbar_content {
+	justify-content: flex-end;
+}
+
+.navbar-toggler, .navbar-dark .navbar-toggler {
+	border-color: transparent;
+	outline: none;
+}
+
+.navbar_menu, .navbar-dark .navbar_menu {
+	align-items: stretch;
+}
+.navbar_menu_item .nav-link, .navbar-dark .navbar_menu_item .nav-link {
+	text-align: center;
+	white-space: nowrap;
+	color: rgba(255,255,255, .8);
+	border-radius: 5px;
+}
+
+.navbar_menu_item .nav-link:hover, .navbar-dark .navbar_menu_item .nav-link:hover {
+	color: #fff;
+	background-color: #10abda;
+}
+
+.navbar .navbar_phone {
+	display: block;
+  margin-top: 3px;
+  padding: .3rem .4rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #004085;
+  font-weight: 800;
+  border-radius: .5rem;
+}
+.navbar .navbar_phone:hover {
+  color: #007bff;
+}
+
+.navbar_buttons {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media (min-width: 992px) {
+	
+.navbar_buttons {
+	flex-direction: row;
+	align-items: center;
+}
+
+}
+.navbar_button {
+	position: relative;
+	min-width: 150px;
+	border-width: 0;
+}
+.navbar_button_arrow {
+	position: absolute;
+  z-index: 0;
+  top: -2px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: .375rem;
+  transition: transform .3s ease,top .3s ease,bottom .3s ease;
+}
+
+.navbar_button_arrow img {
+	display: block;
+  transform: translateX(-1000%);
+  margin-left: -1px;
+  margin-right: -1px;
+  width: auto;
+  height: calc(100% + 4px);
+  border-style: none;
+  animation: btnArrowMove 3s infinite linear;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+@keyframes btnArrowMove {
+  to {
+    transform: translateX(2000%);
+  }
+}
+.navbar_button_help img {
+  animation-delay: 2s;
+}
+.navbar_button_send img {
+  animation-delay: 2.3s;
+}
+
+.navbar_search {
+	display: none;
+	width: auto;
+	max-width: 25rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+@media (min-width: 768px) {
+
+	.content_wrapper {
+		padding: 0 1.875rem 2.5rem;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.content_wrapper {
+		padding: 0 2.5rem 3.5rem;
+	}
+
+	.content_line {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.content_wrapper {
+		max-width: 1050px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}

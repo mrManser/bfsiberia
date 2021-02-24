@@ -1,0 +1,22 @@
+.slider_controls {
+  position: relative;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.slider_controls li {
+  width: 22px;
+  height: auto;
+  margin: 0 5px;
+  text-align: center;
+  text-indent: unset;
+  background-clip: unset;
+  border: 0;
+  border-radius: 5px;
+  opacity: .7;
+}
+@media (max-width: 480px) {
+  .slider_controls li {
+    margin: 0 3px;
+  }
+}
